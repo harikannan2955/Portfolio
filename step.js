@@ -1,7 +1,6 @@
 //--------------------------------------
 // Mock data
 //--------------------------------------
-
 const PRODUCTS = [
   { id:1, category:"Electronics", name:"Smartphone ", desc:"Latest smartphone", price:1000.99, stock:12, image:"https://images.unsplash.com/photo-1639216456200-7909d92fec03?auto=format&fit=crop&fm=jpg&w=700&q=80", createdAt:"2025‑07‑01", updatedAt:"2025‑07‑01" },
   { id:2, category:"Electronics", name:"Wireless Headphones", desc:"Noise‑canceling", price:199.50, stock:25, image:"https://listiq.in/assets/white-bg-headphone-B5exBBAy.jpg", createdAt:"2025‑07‑02", updatedAt:"2025‑07‑02" },
@@ -12,15 +11,15 @@ const PRODUCTS = [
   { id:7, category:"Electronics", name:"Air conditioner ", desc:"cooling", price:699.99, stock:12, image:"https://spb.tecl.ru/wa-data/public/shop/products/87/24/22487/images/45997/45997.750.jpg", createdAt:"2025‑07‑01", updatedAt:"2025‑07‑01" },
   { id:8, category:"Electronics", name:"Microwave Oven", desc:"heating", price:199.50, stock:25, image:"https://www.electrolux.in/globalassets/support/faq/microwave-faq-640x640.jpg?width=464", createdAt:"2025‑07‑02", updatedAt:"2025‑07‑02" },
   { id:9, category:"Home Appliances", name:"Toaster", desc:"Healthy frying", price:89.00, stock:5, image:"https://bmstores.fr/1010433-large_default/grille-pain-2-fentes-simply.jpg", createdAt:"2025‑07‑03", updatedAt:"2025‑07‑03" },
-  { id:10, category:"Home Appliances", name:"Fans", desc:"", price:299.99, stock:0, image:"https://www.bigbang.si/upload/catalog/product/639264/8713016042866_688cd286d5f20.jpg", createdAt:"2025‑07‑04", updatedAt:"2025‑07‑04" },
+  { id:10, category:"Home Appliances", name:"Fans", desc:"", price:299.99, stock:0, image:"https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=700" },
   { id:11, category:"Electronics", name:"Refrigerator", desc:"Double door", price:149.99, stock:8, image:"https://bf1af2.akinoncloudcdn.com/products/2025/02/28/351885/e9410610-52b4-4285-b0e3-d7cf3062c9c4.jpg", createdAt:"2025‑07‑05", updatedAt:"2025‑07‑05" },
-  { id:12, category:"Furniture", name:"sofa", desc:"Comfort seating", price:120.00, stock:15, image:"https://cdn11.bigcommerce.com/s-d01ngvbyeq/images/stencil/original/products/9133/35633/Aubery-Light-Grey-4__86624.1772688596.jpg", createdAt:"2025‑07‑05", updatedAt:"2025‑07‑05" },
+  { id:12, category:"Furniture", name:"sofa", desc:"Comfort seating", price:120.00, stock:15, image:"https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700" },
   { id:13, category:"Electronics", name:"Television ", desc:"4K Ultra HD", price:699.99, stock:12, image:"https://www.lg.com/content/dam/channel/wcms/hk_en/images/tv/43ur8050pcb_ahkg_echk_hk_en_c/gallery/large02.jpg", createdAt:"2025‑07‑01", updatedAt:"2025‑07‑01" },
   { id:14, category:"Electronics", name:"ceiling fan", desc:"Energy efficient", price:199.50, stock:25, image:"https://mercator.com.au/cdn/shop/files/Nemoi_Mobile.jpg?v=1722329650&width=1400", createdAt:"2025‑07‑02", updatedAt:"2025‑07‑02" },
   { id:15, category:"Home Appliances", name:"Iron", desc:"Steam iron", price:89.00, stock:5, image:"https://prontopremios.com.uy/Imagenes/CUO4135.png", createdAt:"2025‑07‑03", updatedAt:"2025‑07‑03" },
   { id:16, category:"Home Appliances", name:"Lamp", desc:"Lighting", price:299.99, stock:0, image:"https://www.buildmat.com.au/cdn/shop/files/telbix_JAXON_20TL-WH_White_1_NoBg.png?v=1749172659&width=600", createdAt:"2025‑07‑04", updatedAt:"2025‑07‑04" },
   { id:17, category:"Electronics", name:"Vacuum cleaner", desc:"Powerful suction", price:149.99, stock:8, image:"https://media.kohlsimg.com/is/image/kohls/6527151?hei=1000&op_sharpen=1&wid=1000", createdAt:"2025‑07‑05", updatedAt:"2025‑07‑05" },
-  { id:18, category:"Furniture", name:"Table", desc:"Dining table", price:120.00, stock:15, image:"https://www.thebedroomshop.co.uk/image/cache/catalog/wp/image3533-800x800.jpg", createdAt:"2025‑07‑05", updatedAt:"2025‑07‑05" },
+  { id:18, category:"Furniture", name:"Table", desc:"Dining table", price:120.00, stock:15, image:"https://images.unsplash.com/photo-1499933374294-4584851497cc?w=700"},
   { id:19, category:"Electronics", name:"Washing Machine", desc:"Front load", price:699.99, stock:12, image:"https://whirlpoolindia.vtexassets.com/arquivos/ids/164350-800-auto?v=638731268849000000&width=800&height=auto&aspect=true", createdAt:"2025‑07‑01", updatedAt:"2025‑07‑01" },
   { id:20, category:"Electronics", name:"Wireless Headphones", desc:"Noise‑canceling", price:199.50, stock:25, image:"https://listiq.in/assets/white-bg-headphone-B5exBBAy.jpg", createdAt:"2025‑07‑02", updatedAt:"2025‑07‑02" },
   { id:21, category:"Home Appliances", name:"Air Fryer", desc:"Healthy frying", price:89.00, stock:5, image:"https://www.zoro.com/static/cms/product/full/Emerald%20Electronics%20USA_1802xx3.jpg", createdAt:"2025‑07‑03", updatedAt:"2025‑07‑03" },
