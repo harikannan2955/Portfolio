@@ -1,34 +1,186 @@
 //--------------------------------------
 // Mock data
 //--------------------------------------
-const PRODUCTS = [
-  { id:1, category:"Electronics", name:"Smartphone ", desc:"Latest smartphone", price:1000.99, stock:12, image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNQSwWDcu5oZ7hJHAsHyZoGSXTTH4LWAZ4cBu6Jh9A3ZhSLbc5u9vhB8-dLszqKYFNks0&usqp=CAU", createdAt:"2025‑07‑01", updatedAt:"2025‑07‑01" },
-  { id:2, category:"Electronics", name:"Wireless Headphones", desc:"Noise‑canceling", price:199.50, stock:25, image:"https://www.leafstudios.in/cdn/shop/files/1_a43c5e0b-3a47-497d-acec-b4764259b10e_1024x1024.png?v=1750486829", createdAt:"2025‑07‑02", updatedAt:"2025‑07‑02" },
-  { id:3, category:"Home Appliances", name:"Air Fryer", desc:"Healthy frying", price:89.00, stock:5, image:"https://cdn.accentuate.io/605666443568/-1695035269432/3-v1695036808948.png?800x800", createdAt:"2025‑07‑03", updatedAt:"2025‑07‑03" },
-  { id:4, category:"Home Appliances", name:"Robot Vacuum", desc:"Automatic cleaning", price:299.99, stock:0, image:"https://www.livemint.com/lm-img/img/2024/01/24/1600x900/best_robotic_vacuum_cleaner_1706094429597_1706094429964.jpg", createdAt:"2025‑07‑04", updatedAt:"2025‑07‑04" },
-  { id:5, category:"Electronics", name:"Smartwatch Pro", desc:"portable device", price:149.99, stock:8, image:"https://m.media-amazon.com/images/I/71PllgqLw-L.jpg", createdAt:"2025‑07‑05", updatedAt:"2025‑07‑05" },
-  { id:6, category:"Furniture", name:"Chair", desc:"seat", price:120.00, stock:15, image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdnb39Wv8Io78__b-KqmejJv9ABBTeXost-g&s", createdAt:"2025‑07‑05", updatedAt:"2025‑07‑05" },
-  { id:7, category:"Electronics", name:"Air conditioner ", desc:"cooling", price:699.99, stock:12, image:"https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/global/images-for-blog/ac-maintenance-for-lasting-system-pc.jpg", createdAt:"2025‑07‑01", updatedAt:"2025‑07‑01" },
-  { id:8, category:"Electronics", name:"Microwave Oven", desc:"heating", price:199.50, stock:25, image:"https://www.electrolux.in/globalassets/support/faq/microwave-faq-640x640.jpg?width=464", createdAt:"2025‑07‑02", updatedAt:"2025‑07‑02" },
-  { id:9, category:"Home Appliances", name:"Toaster", desc:"Healthy frying", price:89.00, stock:5, image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVMLZVv2dvbd5fljyEVz4X0cR54PMpRcEAqw&s", createdAt:"2025‑07‑03", updatedAt:"2025‑07‑03" },
-  { id:10, category:"Home Appliances", name:"Fans", desc:"", price:299.99, stock:0, image:"https://lastudio.co.in/wp-content/uploads/2024/11/Whimberl-Black.jpg", createdAt:"2025‑07‑04", updatedAt:"2025‑07‑04" },
-  { id:11, category:"Electronics", name:"Refrigerator", desc:"Double door", price:149.99, stock:8, image:"https://www.livemint.com/lm-img/img/2024/06/13/1600x900/buying_guide_refrigerators_1718271407693_1718271420203.jpg", createdAt:"2025‑07‑05", updatedAt:"2025‑07‑05" },
-  { id:12, category:"Furniture", name:"sofa", desc:"Comfort seating", price:120.00, stock:15, image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdnb39Wv8Io78__b-KqmejJv9ABBTeXost-g&s", createdAt:"2025‑07‑05", updatedAt:"2025‑07‑05" },
-  { id:13, category:"Electronics", name:"Television ", desc:"4K Ultra HD", price:699.99, stock:12, image:"https://5.imimg.com/data5/AL/SG/EA/SELLER-86610723/oscar-24xl23-24-inch-500x500.jpg", createdAt:"2025‑07‑01", updatedAt:"2025‑07‑01" },
-  { id:14, category:"Electronics", name:"ceiling fan", desc:"Energy efficient", price:199.50, stock:25, image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAKTltkbpSXbBdxKASoDpBZ7KxoSmAmZE-Jw&s", createdAt:"2025‑07‑02", updatedAt:"2025‑07‑02" },
-  { id:15, category:"Home Appliances", name:"Iron", desc:"Steam iron", price:89.00, stock:5, image:"https://www.sencor.com/Sencor/media/content/main%20picture/41012747.jpg", createdAt:"2025‑07‑03", updatedAt:"2025‑07‑03" },
-  { id:16, category:"Home Appliances", name:"Lamp", desc:"Lighting", price:299.99, stock:0, image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-6l5iWk8nSTRhpNMspl8RP7a0g1zaRUnHRg&s", createdAt:"2025‑07‑04", updatedAt:"2025‑07‑04" },
-  { id:17, category:"Electronics", name:"Vacuum cleaner", desc:"Powerful suction", price:149.99, stock:8, image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMM2okB38E-IomZdNk2xXcBWdg_QpS94fFRw&s", createdAt:"2025‑07‑05", updatedAt:"2025‑07‑05" },
-  { id:18, category:"Furniture", name:"Table", desc:"Dining table", price:120.00, stock:15, image:"https://damroimages.blob.core.windows.net/damroimages/7719.jpg", createdAt:"2025‑07‑05", updatedAt:"2025‑07‑05" },
-  { id:19, category:"Electronics", name:"Washing Machine", desc:"Front load", price:699.99, stock:12, image:"https://whirlpoolindia.vtexassets.com/arquivos/ids/164350-800-auto?v=638731268849000000&width=800&height=auto&aspect=true", createdAt:"2025‑07‑01", updatedAt:"2025‑07‑01" },
-  { id:20, category:"Electronics", name:"Wireless Headphones", desc:"Noise‑canceling", price:199.50, stock:25, image:"https://www.leafstudios.in/cdn/shop/files/1_a43c5e0b-3a47-497d-acec-b4764259b10e_1024x1024.png?v=1750486829", createdAt:"2025‑07‑02", updatedAt:"2025‑07‑02" },
-  { id:21, category:"Home Appliances", name:"Air Fryer", desc:"Healthy frying", price:89.00, stock:5, image:"https://cdn.accentuate.io/605666443568/-1695035269432/3-v1695036808948.png?800x800", createdAt:"2025‑07‑03", updatedAt:"2025‑07‑03" },
-  { id:22, category:"Home Appliances", name:"Robot Vacuum", desc:"Automatic cleaning", price:299.99, stock:0, image:"https://www.livemint.com/lm-img/img/2024/01/24/1600x900/best_robotic_vacuum_cleaner_1706094429597_1706094429964.jpg", createdAt:"2025‑07‑04", updatedAt:"2025‑07‑04" },
-  { id:23, category:"Electronics", name:"Smartwatch Pro", desc:"Fitness and notifications", price:149.99, stock:8, image:"https://m.media-amazon.com/images/I/71PllgqLw-L.jpg", createdAt:"2025‑07‑05", updatedAt:"2025‑07‑05" },
-  { id:24, category:"Furniture", name:"Tray", desc:"Used to carry", price:120.00, stock:15, image:"https://m.media-amazon.com/images/I/71IBmim3usL._UF894,1000_QL80_.jpg", createdAt:"2025‑07‑05", updatedAt:"2025‑07‑05" },
-  { id:25, category:"Furniture", name:"Desk", desc:"Comfortable", price:120.00, stock:15, image:"https://images-cdn.ubuy.co.in/6660b3e03e6cef6c97464be8-eureka-ergonomic-standing-desk.jpg", createdAt:"2025‑07‑05", updatedAt:"2025‑07‑05" },
 
+const products = [
+  {
+    id: 10,
+    category: "Home Appliances",
+    name: "Table Fan",
+    desc: "High-speed portable table fan",
+    price: 1499,
+    stock: 20,
+    image: "./images/table-fan.jpg",
+    createdAt: "2026-11-22",
+    updatedAt: "2026-11-22"
+  },
+  {
+    id: 11,
+    category: "Electronics",
+    name: "Double Door Refrigerator",
+    desc: "Energy-efficient double door refrigerator",
+    price: 28999,
+    stock: 8,
+    image: "./images/refrigerator.jpg",
+    createdAt: "2026-11-22",
+    updatedAt: "2026-11-22"
+  },
+  {
+    id: 12,
+    category: "Furniture",
+    name: "Sofa",
+    desc: "Comfortable three-seater sofa",
+    price: 18999,
+    stock: 15,
+    image: "./images/sofa.jpg",
+    createdAt: "2026-11-22",
+    updatedAt: "2026-11-22"
+  },
+  {
+    id: 13,
+    category: "Electronics",
+    name: "LED Smart Television",
+    desc: "4K Ultra HD smart television",
+    price: 32999,
+    stock: 12,
+    image: "./images/television.jpg",
+    createdAt: "2026-11-22",
+    updatedAt: "2026-11-22"
+  },
+  {
+    id: 14,
+    category: "Electronics",
+    name: "Ceiling Fan",
+    desc: "Energy-efficient ceiling fan",
+    price: 2499,
+    stock: 25,
+    image: "./images/ceiling-fan.jpg",
+    createdAt: "2026-11-22",
+    updatedAt: "2026-11-22"
+  },
+  {
+    id: 15,
+    category: "Home Appliances",
+    name: "Steam Iron",
+    desc: "Non-stick steam iron",
+    price: 1799,
+    stock: 5,
+    image: "./images/steam-iron.jpg",
+    createdAt: "2026-11-22",
+    updatedAt: "2026-11-22"
+  },
+  {
+    id: 16,
+    category: "Home Appliances",
+    name: "LED Table Lamp",
+    desc: "Modern LED table lamp",
+    price: 899,
+    stock: 18,
+    image: "./images/lamp.jpg",
+    createdAt: "2026-11-22",
+    updatedAt: "2026-11-22"
+  },
+  {
+    id: 17,
+    category: "Electronics",
+    name: "Vacuum Cleaner",
+    desc: "Powerful suction vacuum cleaner",
+    price: 5499,
+    stock: 8,
+    image: "./images/vacuum-cleaner.jpg",
+    createdAt: "2026-11-22",
+    updatedAt: "2026-11-22"
+  },
+  {
+    id: 18,
+    category: "Furniture",
+    name: "Dining Table",
+    desc: "Modern wooden dining table",
+    price: 12999,
+    stock: 15,
+    image: "./images/dining-table.jpg",
+    createdAt: "2026-11-22",
+    updatedAt: "2026-11-22"
+  },
+  {
+    id: 19,
+    category: "Electronics",
+    name: "Washing Machine",
+    desc: "Fully automatic front load washing machine",
+    price: 26999,
+    stock: 12,
+    image: "./images/washing-machine.jpg",
+    createdAt: "2026-11-22",
+    updatedAt: "2026-11-22"
+  },
+  {
+    id: 20,
+    category: "Electronics",
+    name: "Wireless Headphones",
+    desc: "Bluetooth noise-cancelling headphones",
+    price: 2999,
+    stock: 25,
+    image: "./images/headphones.jpg",
+    createdAt: "2026-11-22",
+    updatedAt: "2026-11-22"
+  },
+  {
+    id: 21,
+    category: "Home Appliances",
+    name: "Air Fryer",
+    desc: "Digital air fryer for healthy cooking",
+    price: 4999,
+    stock: 10,
+    image: "./images/air-fryer.jpg",
+    createdAt: "2026-11-22",
+    updatedAt: "2026-11-22"
+  },
+  {
+    id: 22,
+    category: "Home Appliances",
+    name: "Robot Vacuum Cleaner",
+    desc: "Automatic robotic floor cleaner",
+    price: 14999,
+    stock: 7,
+    image: "./images/robot-vacuum.jpg",
+    createdAt: "2026-11-22",
+    updatedAt: "2026-11-22"
+  },
+  {
+    id: 23,
+    category: "Electronics",
+    name: "Smartwatch Pro",
+    desc: "Fitness tracking and smart notifications",
+    price: 3999,
+    stock: 20,
+    image: "./images/smartwatch.jpg",
+    createdAt: "2026-11-22",
+    updatedAt: "2026-11-22"
+  },
+  {
+    id: 24,
+    category: "Furniture",
+    name: "Serving Tray",
+    desc: "Durable multipurpose serving tray",
+    price: 499,
+    stock: 30,
+    image: "./images/serving-tray.jpg",
+    createdAt: "2026-11-22",
+    updatedAt: "2026-11-22"
+  },
+  {
+    id: 25,
+    category: "Furniture",
+    name: "Office Desk",
+    desc: "Modern ergonomic office desk",
+    price: 8999,
+    stock: 15,
+    image: "./images/office-desk.jpg",
+    createdAt: "2026-11-22",
+    updatedAt: "2026-11-22"
+  }
 ];
+
 
 const CUSTOMERS = [
   { id:1, firstName:"Alice", lastName:"Smith", email:"alice@mail.com", password:"pass1", blocked:false },
