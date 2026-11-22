@@ -2,13 +2,13 @@
 // Mock data
 //--------------------------------------
 const PRODUCTS = [
-  { id:1, category:"Electronics", name:"Smartphone ", desc:"Latest smartphone", price:1000.99, stock:12, image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEn8wIlfW9OlAOqkNtQRCY3R0OOmNLQE7hpWtSFySW5Q&s=10", createdAt:"2025‑07‑01", updatedAt:"2025‑07‑01" },
+  { id:1, category:"Electronics", name:"Smartphone ", desc:"Latest smartphone", price:1000.99, stock:12, image:"https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=700", createdAt:"2025‑07‑01", updatedAt:"2025‑07‑01" },
   { id:2, category:"Electronics", name:"Wireless Headphones", desc:"Noise‑canceling", price:199.50, stock:25, image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=700", createdAt:"2025‑07‑02", updatedAt:"2025‑07‑02" },
   { id:3, category:"Home Appliances", name:"Air Fryer", desc:"Healthy frying", price:89.00, stock:5, image:"https://images.unsplash.com/photo-1556911220-bff31c812dba?w=700", createdAt:"2025‑07‑03", updatedAt:"2025‑07‑03" },
   { id:4, category:"Home Appliances", name:"Robot Vacuum", desc:"Automatic cleaning", price:299.99, stock:0, image:"https://images.unsplash.com/photo-1558317374-067fb5f30001?w=700", createdAt:"2025‑07‑04", updatedAt:"2025‑07‑04" },
   { id:5, category:"Electronics", name:"Smartwatch Pro", desc:"portable device", price:149.99, stock:8, image:"https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=700", createdAt:"2025‑07‑05", updatedAt:"2025‑07‑05" },
   { id:6, category:"Furniture", name:"Chair", desc:"seat", price:120.00, stock:15, image:"https://images.unsplash.com/photo-1503602642458-232111445657?w=700", createdAt:"2025‑07‑05", updatedAt:"2025‑07‑05" },
-  { id:7, category:"Electronics", name:"Air conditioner ", desc:"cooling", price:699.99, stock:12, image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVfY0eObBRm8pSHC9rK1Ya-TuVu1l65QPfJsopQiZFA&s=10", createdAt:"2025‑07‑01", updatedAt:"2025‑07‑01" },
+  { id:7, category:"Electronics", name:"Air conditioner ", desc:"cooling", price:699.99, stock:12, image:"https://images.unsplash.com/photo-1631545806609-7d4c1f9c4b7e?w=700", createdAt:"2025‑07‑01", updatedAt:"2025‑07‑01" },
   { id:8, category:"Electronics", name:"Microwave Oven", desc:"heating", price:199.50, stock:25, image:"https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=700", createdAt:"2025‑07‑02", updatedAt:"2025‑07‑02" },
   { id:9, category:"Home Appliances", name:"Toaster", desc:"Healthy frying", price:89.00, stock:5, image:"https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=700", createdAt:"2025‑07‑03", updatedAt:"2025‑07‑03" },
   { id:10, category:"Home Appliances", name:"Fans", desc:"", price:299.99, stock:0, image:"https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=700", createdAt:"2025‑07‑04", updatedAt:"2025‑07‑04" },
